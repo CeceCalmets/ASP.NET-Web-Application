@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body { 
+            background-color: lightblue; 
+            font-family: Arial, sans-serif; 
+        } 
+            
+        h1 { 
+            color: navy; 
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Song</h1> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+    frameborder="0" allowfullscreen></iframe> 
+    <script src="script.js">
+        const h1 = document.querySelector('h1'); 
+        h1.style.transition = 'transform 2s'; 
+        h1.addEventListener('mouseover', () => { h1.style.transform = 'scale(1.2)'; 
+
+        }); 
+        h1.addEventListener('mouseout', () => { h1.style.transform = 'scale(1)'; 
+
+        });
+    </script> 
+</body>
+</html>
